@@ -16,9 +16,19 @@ PS C:\Users\gabrielly.boareto> mkdir Catalisa
     Diretório: C:\Users\gabrielly.boareto
 
 
+
+Abrir o README pelo PowerShell
+
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> notepad README.md
+
+
+
+
+
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 d-----        01/12/2024     14:50                Catalisa
+
 
 
 Clonar o repositório
@@ -81,5 +91,12 @@ remote:
 To github.com:GabriellyZup/GitProject2.git
  * [new branch]      adicionar-info-catalisa -> adicionar-info-catalisa
 
+  Info add pelo terminal
+adicionar-info-catalisa
+PS C:\Users\gabrielly.boareto> cd Catalisa
+
+# O Programa Catalisa é uma iniciativa inclusiva voltada para o desenvolvimento profissional de pessoas com diversos níveis de senioridade. 
+
+# Minha participação no programa tem foco na aprendizagem teórica e em projetos práticos. 
 
 
