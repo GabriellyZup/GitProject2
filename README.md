@@ -1,38 +1,19 @@
 # GitProject2
-Exercícios práticos de git/github por powershell - catalisat6 M1 Ex3
+## Exercícios práticos de git/github por powershell - catalisat6 M1 Ex3
 
 
 
-Criar pasta acessória para clonar o projeto:
-
-O Windows PowerShell
-Copyright (C) Microsoft Corporation. Todos os direitos reservados.
-
-Instale o PowerShell mais recente para obter novos recursos e aprimoramentos! https://aka.ms/PSWindows
-
-PS C:\Users\gabrielly.boareto> mkdir Catalisa
-
-
+**Criar pasta acessória para clonar o projeto:**
+    PS C:\Users\gabrielly.boareto> mkdir Catalisa
     Diretório: C:\Users\gabrielly.boareto
 
+**Abrir o README pelo PowerShell**
+    PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> notepad README.md
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    d-----        01/12/2024     14:50                Catalisa
 
-
-Abrir o README pelo PowerShell
-
-PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> notepad README.md
-
-
-
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        01/12/2024     14:50                Catalisa
-
-
-
-Clonar o repositório
-
+**Clonar o repositório**
 PS C:\Users\gabrielly.boareto\Catalisa> git clone git@github.com:GabriellyZup/GitProject2.git
 Cloning into 'GitProject2'...
 remote: Enumerating objects: 6, done.
@@ -43,21 +24,19 @@ Receiving objects: 100% (6/6), done.
 Resolving deltas: 100% (1/1), done.
 PS C:\Users\gabrielly.boareto\Catalisa>
 
+**Criar e mover nova banch**
+    1. navegar para dentro da branch main
+    PS C:\Users\gabrielly.boareto\Catalisa> cd GitProject2
+    PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git branch
+    * main
 
-Criar e mover nova banch
-
-1. navegar para dentro da branch main
-PS C:\Users\gabrielly.boareto\Catalisa> cd GitProject2
-PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git branch
-* main
-
-2. criar e mover a nova branch
-PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git checkout -b adicionar-info-catalisa
-Switched to a new branch 'adicionar-info-catalisa'
-PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
+    2. criar e mover a nova branch
+    PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git checkout -b adicionar-info-catalisa
+    Switched to a new branch 'adicionar-info-catalisa'
+    PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
 
 
-Abrir o readme pelo terminal
+**Abrir o readme pelo terminal**
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> notepad README.md
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git status
 On branch adicionar-info-catalisa
@@ -65,17 +44,16 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   README.md
-
 no changes added to commit (use "git add" and/or "git commit -a")
 
-Adicionar informações ao README pelo terminal
+**Adicionar informações ao README pelo terminal**
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git add README.md
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git commit -m "add info sobre Catalisa no README"
 [adicionar-info-catalisa a8cbc85] add info sobre Catalisa no README
  1 file changed, 14 insertions(+)
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
 
--Push pelo terminal
+**Push pelo terminal**
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git push origin adicionar-info-catalisa
 Enumerating objects: 9, done.
 Counting objects: 100% (9/9), done.
@@ -91,12 +69,31 @@ remote:
 To github.com:GabriellyZup/GitProject2.git
  * [new branch]      adicionar-info-catalisa -> adicionar-info-catalisa
 
-  Info add pelo terminal
+**Adicionar informações pelo terminal**
 adicionar-info-catalisa
 PS C:\Users\gabrielly.boareto> cd Catalisa
 
-# O Programa Catalisa é uma iniciativa inclusiva voltada para o desenvolvimento profissional de pessoas com diversos níveis de senioridade. 
+" O Programa Catalisa é uma iniciativa inclusiva voltada para o desenvolvimento profissional de pessoas com diversos níveis de senioridade"
+" Minha participação no programa tem foco na aprendizagem teórica e em projetos práticos."
 
-# Minha participação no programa tem foco na aprendizagem teórica e em projetos práticos. 
+**checar no terminal se tudo está atualizado**
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git pull origin main
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 16 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (16/16), 6.67 KiB | 31.00 KiB/s, done.
+From github.com:GabriellyZup/GitProject2
+ * branch            main       -> FETCH_HEAD
+   16319e0..00c88de  main       -> origin/main
+Updating 16319e0..00c88de
+Fast-forward
+ README.md | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 78 insertions(+)
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
+
 
 
