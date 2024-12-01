@@ -65,3 +65,21 @@ PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git commit -m "add info sobr
  1 file changed, 14 insertions(+)
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
 
+-Push pelo terminal
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git push origin adicionar-info-catalisa
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 2.51 KiB | 514.00 KiB/s, done.
+Total 9 (delta 2), reused 5 (delta 1), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'adicionar-info-catalisa' on GitHub by visiting:
+remote:      https://github.com/GabriellyZup/GitProject2/pull/new/adicionar-info-catalisa
+remote:
+To github.com:GabriellyZup/GitProject2.git
+ * [new branch]      adicionar-info-catalisa -> adicionar-info-catalisa
+
+
+
