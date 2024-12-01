@@ -90,6 +90,48 @@ From github.com:GabriellyZup/GitProject2
  * branch            main       -> FETCH_HEAD
    16319e0..00c88de  main       -> origin/main
 Updating 16319e0..00c88de
+
+
+
+
+**Fork**
+PS C:\Users\gabrielly.boareto\Catalisa> git clone git@github.com:GabriellyZup/aula-github-fork.git
+Cloning into 'aula-github-fork'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\Users\gabrielly.boareto\Catalisa> cd aula-github-fork
+PS C:\Users\gabrielly.boareto\Catalisa\aula-github-fork> git branch
+* main
+PS C:\Users\gabrielly.boareto\Catalisa\aula-github-fork> git checkout -b readmefork
+Switched to a new branch 'readmefork'
+PS C:\Users\gabrielly.boareto\Catalisa\aula-github-fork> git branch
+  main
+* readmefork
+PS C:\Users\gabrielly.boareto\Catalisa\aula-github-fork> git push origin readmefork
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'readmefork' on GitHub by visiting:
+remote:      https://github.com/GabriellyZup/aula-github-fork/pull/new/readmefork
+remote:
+To github.com:GabriellyZup/aula-github-fork.git
+ * [new branch]      readmefork -> readmefork
+PS C:\Users\gabrielly.boareto\Catalisa\aula-github-fork> git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.80 KiB | 39.00 KiB/s, done.
+From github.com:GabriellyZup/aula-github-fork
+ * branch            main       -> FETCH_HEAD
+   f11db66..dab9455  main       -> origin/main
+Updating f11db66..dab9455
+Fast-forward
+ README.md | Bin 62 -> 58 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\gabrielly.boareto\Catalisa\aula-github-fork>
 Fast-forward
  README.md | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 78 insertions(+)
