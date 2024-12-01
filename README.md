@@ -45,3 +45,23 @@ PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git branch
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git checkout -b adicionar-info-catalisa
 Switched to a new branch 'adicionar-info-catalisa'
 PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
+
+
+Abrir o readme pelo terminal
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> notepad README.md
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git status
+On branch adicionar-info-catalisa
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Adicionar informações ao README pelo terminal
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git add README.md
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git commit -m "add info sobre Catalisa no README"
+[adicionar-info-catalisa a8cbc85] add info sobre Catalisa no README
+ 1 file changed, 14 insertions(+)
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
+
