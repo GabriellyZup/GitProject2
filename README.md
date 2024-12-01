@@ -34,5 +34,14 @@ Resolving deltas: 100% (1/1), done.
 PS C:\Users\gabrielly.boareto\Catalisa>
 
 
+Criar e mover nova banch
 
-PS C:\Users\gabrielly.boareto> cd Catalisa
+1. navegar para dentro da branch main
+PS C:\Users\gabrielly.boareto\Catalisa> cd GitProject2
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git branch
+* main
+
+2. criar e mover a nova branch
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2> git checkout -b adicionar-info-catalisa
+Switched to a new branch 'adicionar-info-catalisa'
+PS C:\Users\gabrielly.boareto\Catalisa\GitProject2>
